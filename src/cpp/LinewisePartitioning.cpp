@@ -23,7 +23,7 @@ void LinewisePartitioning(cube &u_out,cube &a_out,cube &b_out,
    
     // Solve univariate partitioning problems along the lines induced by dir
     #pragma omp parallel for schedule(dynamic)
-    for(uint iter = 0; iter < L_udata.size(); ++iter) {
+    for(unsigned int iter = 0; iter < L_udata.size(); ++iter) {
         // All lists share the same iterator iter
         Stripe &stripe_udata     = L_udata[iter];
         Stripe &stripe_adata     = L_adata[iter];
