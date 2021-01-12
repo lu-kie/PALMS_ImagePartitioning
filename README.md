@@ -26,6 +26,9 @@ using the piecewise affine-linear Mumford-Shah model (also known as "affine-line
    Large values of the model parameter give few segments, while small choices lead to more segments
 and closeness to the data
 
+### Online demo
+An online demo can be found at http://www.ipol.im/pub/art/2020/295/
+
 ## Installation
 ### Compiling
 The algorithm depends on a mex script that needs to be compiled before execution. For compilation inside MATLAB, cd into the 'src/cpp' folder and run build.m
